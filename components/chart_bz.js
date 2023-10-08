@@ -100,7 +100,7 @@ export function ChartBz1d() {
 
 export function ChartBz3d() {
   const [chartData, setChartData] = useState({
-    labels: Core.getLast3DaysInMinutesArray(),
+    labels: Core.getHoursInLastThreeDays(),
     datasets: [
       {
         label: '',

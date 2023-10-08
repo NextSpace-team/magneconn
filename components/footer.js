@@ -10,7 +10,7 @@ const Footer = () => {
       fontSize="sm"
       fontFamily="Inter Tight, sans-serif"
       fontWeight="regular"
-      color="yellow"
+      color="_yellow"
       position="fixed"
       bottom="0"
       left="0"
@@ -28,7 +28,7 @@ const Footer = () => {
         variant="ghost"
         aria-label="GitHub"
         icon={<IoLogoGithub />}
-        color="yellow"
+        color="_yellow"
         fontSize="2.4rem"
         position="absolute"
         bottom="0.5rem"

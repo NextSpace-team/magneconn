@@ -98,7 +98,8 @@ const Navbar = (props) => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-                colorScheme="yellow"
+                colorScheme="_yellow"
+                backgroundColor="_black"
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="https://github.com/NextSpace-team/magneconn_api" ml={1}>

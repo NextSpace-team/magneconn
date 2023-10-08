@@ -15,11 +15,11 @@ const OurTeam = () => (
         </Paragraph>
       </Section>
       <Section delay={0.2} mb={12} >
-        <Paragraph>
+        <Paragraph color={"white"}>
           Thanks for chenking us out. We are <span style={{ color: "yellow" }}>Next Space Lab</span>! A small startup and hackaton team from Ukraine. We are spread all around the globe but still gathering every so often to do something cool.
         </Paragraph>
         <br />
-        <Paragraph>
+        <Paragraph color={"white"}>
           Some more text about us.
         </Paragraph>
       </Section>

@@ -71,7 +71,7 @@ export function ChartPlasmaRealTime() {
 
 export function ChartPlasma3d() {
   const [chartData, setChartData] = useState({
-    labels: Core.getLast3DaysInMinutesArray(),
+    labels: Core.getHoursInLastThreeDays(),
     datasets: [
       {
         label: '',
