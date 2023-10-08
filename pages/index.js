@@ -53,7 +53,7 @@ const chartData = [
     chartLabel: "Bz(min)×K (6h predict)",
   },
   {
-    category: "Plasma",
+    category: "Plasma Temperature",
     chartName: "ChartPlasmaRealTime",
     chartLabel: "Plasma Real-Time",
   },
@@ -162,14 +162,14 @@ const Home = () => {
             justifyContent="center"
             alignItems="center"
             alignContent="space-between"
-            mt={isMobile ? 0 : 10}
+            mt={isMobile ? -1 : 10}
           >
             <List style={{ textAlign: "center" }}>
               {filteredCharts.map((chart) => (
                 <Link key={chart.chartName}>
                   <Button
                     mr={isMobile ? 5 : 10}
-                    height={isMobile ? "2rem" : "3rem"}
+                    height={isMobile ? "1.8rem" : "3rem"}
                     mb={4}
                     backgroundColor={selectedChart === chart.chartName ? "_yellow" : "gray.700"}
                     color={selectedChart === chart.chartName ? "black" : "_yellow"}
