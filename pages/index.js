@@ -9,7 +9,6 @@ import {
   Flex,
   useBreakpointValue,
   Select,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
@@ -121,7 +120,7 @@ const Home = () => {
               <Heading as="h2" fontFamily={"Inter Tight, sans-serif"} fontWeight={"regular"} mb={"1.5rem"} color={"_yellow"}>
                 Amplitude Chart ({selectedCategory})
               </Heading>
-              <Select w={"20%"} value={selectedCategory} onChange={(e) => handleCategoryChange(e.target.value)}>
+              <Select w={"20%"} color={"yellow"} value={selectedCategory} onChange={(e) => handleCategoryChange(e.target.value)}>
                 {uniqueCategories.map((category) => (
                   <option key={category} value={category}>
                     {category}
@@ -172,7 +171,7 @@ const Home = () => {
                   <Button
                     mr={isMobile ? 5 : 10}
                     mb={4}
-                    colorScheme={selectedChart === chart.chartName ? "yellow" : undefined}
+                    colorScheme={selectedChart === chart.chartName ? "yellow" : "gray"}
                     onClick={() => handleChartSwitch(chart.chartName)}
                   >
                     {chart.chartLabel}
