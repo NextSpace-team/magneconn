@@ -7,7 +7,7 @@ const OurTeam = () => (
   <Layout title="Magneconn | Our Team">
     <Container>
       <Heading as="h1" fontSize={35} mt={12} mb={12} textAlign={"center"} color={"_yellow"}>
-        Welcome to our team page!
+        Abous us
       </Heading>
       <Section delay={0.1} mb={7} >
         <Paragraph>

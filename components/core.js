@@ -143,7 +143,7 @@ export function getLast2HoursInMinutes() {
 }
 
 export function getOneDayPredictLabels() {
-  const labels = ["00:00", "06:00", "12:00", "18:00", "00:00"]
+  const labels = ["00:00", "06:00", "12:00", "18:00"]
   return labels;
 }
 

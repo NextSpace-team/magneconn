@@ -15,8 +15,7 @@ import Section from "../components/section";
 import { ChartDstLastMonth } from "../components/chart_dst";
 import { ChartBz7d, ChartBz1d, ChartBz3d, ChartBz6h } from "../components/chart_bz";
 import { ChartOneDayPredict } from "../components/chart_predict";
-import { ChartPlasmaRealTime, ChartPlasma3d, ChartPlasme7d, ChartPlasma6h, ChartPlasma2h, ChartPlasma1d } from '../components/chart_plasma'; // Added imports for new chart components
-
+import { ChartPlasmaRealTime, ChartPlasma3d, ChartPlasme7d, ChartPlasma6h, ChartPlasma2h, ChartPlasma1d } from '../components/chart_plasma';
 import Paragraph from "../components/paragraph";
 import { fetchDstNowData } from '../components/dst_now';
 import { fetchBzNowData } from '../components/bz_now';
@@ -89,8 +88,8 @@ const Home = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("DST");
   const [selectedChart, setSelectedChart] = useState("ChartDstLastMonth");
-  const [dstData, setDstData] = useState({ dst: null, stormStrength: null }); // Initialize with an object
-  const [bzData, setBzData] = useState({ bz: null, stormStrength: null }); // Initialize with an object
+  const [dstData, setDstData] = useState({ dst: null, stormStrength: null });
+  const [bzData, setBzData] = useState({ bz: null, stormStrength: null });
   const [predictData, setPredictData] = useState(null);
   const [stormStrength, setStormStrength] = useState(null);
 
@@ -171,7 +170,7 @@ const Home = () => {
                   <Button
                     mr={isMobile ? 5 : 10}
                     mb={4}
-                    backgroundColor={selectedChart === chart.chartName ? "_yellow" : "transparent"}
+                    backgroundColor={selectedChart === chart.chartName ? "_yellow" : "gray.700"}
                     color={selectedChart === chart.chartName ? "black" : "_yellow"}
                     onClick={() => handleChartSwitch(chart.chartName)}
                   >
