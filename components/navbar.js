@@ -24,7 +24,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       scroll={false}
       p={2}
       color="_yellow"
-      fontFamily='Ubuntu, sans-serif'
+      fontFamily='Inter Tight, sans-serif'
       fontWeight="regular"
       fontSize="2xl"
       target={target}
@@ -98,6 +98,7 @@ const Navbar = (props) => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                colorScheme="_yellow"
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="https://github.com/kenjitheman/wdcg_api" ml={1}>
