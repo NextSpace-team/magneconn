@@ -171,8 +171,8 @@ const Home = () => {
                   <Button
                     mr={isMobile ? 5 : 10}
                     mb={4}
-                    backgroundColor={selectedChart === chart.chartName ? "_yellow" : "none"}
-                    color={selectedChart === chart.chartName ? "black" : "none"}
+                    backgroundColor={selectedChart === chart.chartName ? "_yellow" : "transparent"}
+                    color={selectedChart === chart.chartName ? "black" : "_yellow"}
                     onClick={() => handleChartSwitch(chart.chartName)}
                   >
                     {chart.chartLabel}

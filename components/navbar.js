@@ -23,7 +23,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      color="yellow"
+      color="_yellow"
       fontFamily='Inter Tight, sans-serif'
       fontWeight="regular"
       fontSize="2xl"
@@ -98,7 +98,7 @@ const Navbar = (props) => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-                colorScheme="_yellow"
+                color="_yellow"
                 backgroundColor="_black"
               />
               <MenuList>
