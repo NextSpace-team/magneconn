@@ -169,6 +169,7 @@ const Home = () => {
                 <Link key={chart.chartName}>
                   <Button
                     mr={isMobile ? 5 : 10}
+                    height={isMobile ? "2rem" : "3rem"}
                     mb={4}
                     backgroundColor={selectedChart === chart.chartName ? "_yellow" : "gray.700"}
                     color={selectedChart === chart.chartName ? "black" : "_yellow"}
