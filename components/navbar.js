@@ -23,7 +23,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      color="_yellow"
+      color="yellow"
       fontFamily='Inter Tight, sans-serif'
       fontWeight="regular"
       fontSize="2xl"
@@ -76,7 +76,7 @@ const Navbar = (props) => {
           ml={"25%"}
         >
 
-          <LinkItem href="https://github.com/kenjitheman/wdcg_api" path={path}>
+          <LinkItem href="https://github.com/NextSpace-team/magneconn_api" path={path}>
             Get API
           </LinkItem>
 
@@ -98,10 +98,10 @@ const Navbar = (props) => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-                colorScheme="_yellow"
+                colorScheme="yellow"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="https://github.com/kenjitheman/wdcg_api" ml={1}>
+                <MenuItem as={MenuLink} href="https://github.com/NextSpace-team/magneconn_api" ml={1}>
                   Get API
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/about" ml={1} >
