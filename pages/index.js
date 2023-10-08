@@ -115,10 +115,10 @@ const Home = () => {
   return (
     <Layout textAlign={"center"} w={"100%"} height={"100%"}>
       <Box display={{ md: "unset" }}>
-        <Box flexGrow={1} mt={120} >
+        <Box flexGrow={1} mt={100} >
           <Section delay={0.1}>
             <Box display={"flex"} justifyContent={"space-between"}>
-              <Heading as="h2" fontFamily={"Ubuntu, sans-serif"} fontWeight={"regular"} mb={"1.5rem"} color={"_yellow"}>
+              <Heading as="h2" fontFamily={"Inter Tight, sans-serif"} fontWeight={"regular"} mb={"1.5rem"} color={"_yellow"}>
                 Amplitude Chart ({selectedCategory})
               </Heading>
               <Select w={"20%"} value={selectedCategory} onChange={(e) => handleCategoryChange(e.target.value)}>
@@ -172,7 +172,7 @@ const Home = () => {
                   <Button
                     mr={isMobile ? 5 : 10}
                     mb={4}
-                    colorScheme={selectedChart === chart.chartName ? "orange" : undefined}
+                    colorScheme={selectedChart === chart.chartName ? "yellow" : undefined}
                     onClick={() => handleChartSwitch(chart.chartName)}
                   >
                     {chart.chartLabel}
@@ -180,29 +180,6 @@ const Home = () => {
                 </Link>
               ))}
             </List>
-          </Flex>
-          <Flex
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Box
-              textAlign="center"
-              mt={"7%"}
-              fontFamily={"Ubuntu, sans-serif"}
-              fontSize={"1.5rem"}
-              borderRadius="2xl"
-              mb={6}
-              p={5}
-              bg={useColorModeValue("_yellow", "whiteAlpha.200")}
-              css={{ backdropFilter: "blur(10px)", width: "60%" }}
-            >
-              <Paragraph style={{ textAlign: "center" }}>
-                hello
-                <span style={{ color: stormStrength === "strong" ? "red" : stormStrength === "medium" ? "yellow" : "green" }}>
-                  {stormStrength}
-                </span>
-              </Paragraph>
-            </Box>
           </Flex>
         </Box>
       </Box>
