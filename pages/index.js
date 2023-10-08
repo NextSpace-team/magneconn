@@ -58,27 +58,27 @@ const chartData = [
     chartLabel: "Plasma Real-Time",
   },
   {
-    category: "Plasma",
+    category: "Plasma Temperature",
     chartName: "ChartPlasma3d",
     chartLabel: "Plasma Last 3 days",
   },
   {
-    category: "Plasma",
+    category: "Plasma Temperature",
     chartName: "ChartPlasme7d",
     chartLabel: "Plasma Last 7 days",
   },
   {
-    category: "Plasma",
+    category: "Plasma Temperature",
     chartName: "ChartPlasma6h",
     chartLabel: "Plasma Last 6 hours",
   },
   {
-    category: "Plasma",
+    category: "Plasma Temperature",
     chartName: "ChartPlasma2h",
     chartLabel: "Plasma Last 2 hours",
   },
   {
-    category: "Plasma",
+    category: "Plasma Temperature",
     chartName: "ChartPlasma1d",
     chartLabel: "Plasma Last 24 hours",
   },
