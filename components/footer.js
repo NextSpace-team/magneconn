@@ -8,9 +8,9 @@ const Footer = () => {
       justifyContent="center"
       alignItems="center"
       fontSize="sm"
-      fontFamily="Raleway, sans-serif"
+      fontFamily="Inter Tight, sans-serif"
       fontWeight="regular"
-      color="_yellow"
+      color="yellow"
       position="fixed"
       bottom="0"
       left="0"
@@ -23,12 +23,12 @@ const Footer = () => {
       </span>
       <IconButton
         as="a"
-        href="https://github.com/kenjitheman/projx.c"
+        href="https://github.com/NextSpace-team/magneconn_api"
         target="_blank"
         variant="ghost"
         aria-label="GitHub"
         icon={<IoLogoGithub />}
-        color="_yellow"
+        color="yellow"
         fontSize="2.4rem"
         position="absolute"
         bottom="0.5rem"
